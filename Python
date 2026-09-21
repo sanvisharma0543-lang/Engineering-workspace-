@@ -1,0 +1,372 @@
+#1. to determine largest number between three
+
+num1 = int(input('Enter the first number'))
+num2 = int(input('Enter the second number'))
+num3 = int(input('Enter the third number'))
+
+if num1 > num2 and num1 > num3:
+    print(f'{num1} is greater')
+
+elif num2 > num1 and num2 > num3:
+    print(f'{num2} is greater')
+
+else:
+    print(f'{num3} is greater')
+
+
+#2. to dertermine even and odd number
+
+num1 = int(input('Enter the number'))
+if num1 % 2 == 0:
+    print(f'num1 is even')
+
+else:
+    print(f'num1 is odd')
+
+
+#3. sum of two numbers
+
+num1 = int(input('Enter the first number'))
+num2 = int(input('Enter the second number'))
+sum = num1+num2
+print(sum)
+
+
+#4. to determine largest between four numbers
+
+num1 = int(input('Enter the first number : '))
+num2 = int(input('Enter the second number : '))
+num3 = int(input('Enter the third number : '))
+num4 = int(input('Enter the fourth number : '))
+
+if num1 > num2 and num1 > num3:
+    if num1 > num4:
+        print(f'{num1} is greater')
+    else:
+        print(f'{num4} is greater')
+
+elif num2 > num1 and num2 > num3:
+    if num2 > num4:
+        print(f'{num2} is greater')
+    else:
+        print(f'{num4} is greater')
+
+elif num3 > num1 and num3 > num2:
+    if num3 > num4:
+        print(f'{num3} is greater')
+    else:
+        print(f'{num4} is greater')
+
+
+#5. swapping three numbers
+
+a = int(input('Enter the first number: '))
+b = int(input('Enter the second number: '))
+c = int(input('Enter the third number: '))
+
+temp1 = a
+temp2 = b
+a = c
+b = temp1
+c = temp2
+
+print(a,b,c)
+
+
+
+#6. swapping four numbers
+
+a = int(input('Enter the first number: '))
+b = int(input('Enter the second number: '))
+c = int(input('Enter the third number: '))
+d = int(input('Enter the fourth number: '))
+
+a,b,c,d = d,b,a,c
+
+print(a,b,c,d)
+
+
+
+#7. operators
+
+num1 = int(input('Enter the first number:'))
+num2 = int(input('Enter the second number: '))
+sum = num1 + num2
+difference = num1 - num2
+product = num1*num2
+remainder = num1 % num2
+quotient = num1 / num2
+floor_quotient = num1 // num2
+
+print(sum,difference,product,remainder,quotient,floor_quotient)
+
+
+
+#8. grade system
+
+marks = float(input('Enter the marks'))
+
+if marks >= 90 and marks <=100:
+    print('Grade A')
+
+elif marks > 75 and marks < 89:
+    print('Grade B')
+
+elif marks > 60 and marks < 74:
+    print('Grade C')
+
+elif marks > 40 and marks < 59:
+    print('Grade D')
+
+elif marks <=  39 and marks >=0:
+    print('Grade F')
+
+else:
+    print('Please Enter a valid number')
+
+
+
+#9. store your roll number in a varibale and print it along with the text 'roll numbers'
+
+roll_no = int(input('Enter the roll number'))
+print(f'Roll Number : {roll_no}')
+
+
+
+#10. store two number in variable and print their product
+
+num1 = int(input('Enter the first number'))
+num2 = int(input('Enter the second number'))
+
+product = num1*num2
+
+print(product)
+
+
+
+#11. store a decimal number (such as height in meters) in variable and print it
+
+height = float(input('Enter the height in meters'))
+print(f'{height} m')
+
+
+
+
+
+#12. swapping four numbers
+
+a = int(input('Enter the first number: '))
+b = int(input('Enter the second number: '))
+c = int(input('Enter the third number: '))
+d = int(input('Enter the fourth number: '))
+
+temp1 = a
+temp2 = b
+temp3 = c
+
+a = d
+b = temp1
+c = temp2
+d = temp1
+
+print(a,b,c,d)
+
+
+
+#13. store three subjects name in three variables and print all three in one print() statement
+
+sub1 = 'Maths'
+sub2 = 'English'
+sub3 = 'Programming'
+
+print(sub1,sub2,sub3)
+
+
+
+#14. Store a boolean value showing whether you like Python
+
+person_review = input("Do you like Python? (True/False): ")
+
+if person_review == "True":
+    print("likes_python")
+else:
+    print("dont_like_python")
+
+
+
+#15. write a python program to input a students name , age and marks and display all three values with suitable tables
+
+name = input('Enter the Name: ')
+age = int(input('Enter the age: '))
+marks = int(input('Enter the marks: '))
+print(f'Student Name: {name} , Student Age: {age} , Student Marks: {marks}')
+
+
+
+#16. write a python program to input the length and breadth of a rectangle and calculate its area and perimeter
+
+length = int(input('Enter the length'))
+breadth = int(input('Enter the breadth'))
+
+area = length*breadth
+perimeter = 2*(length+breadth)
+
+print(area,perimeter)
+
+
+
+#17. write a program to input principal , rate and time calculate simple interset and total amount
+
+principal = int(input('Enter the principal amount'))
+rate = int(input('Enter the rate'))
+time = int(input('Enter the time'))
+simple_interset = (principal*rate*time) / 100
+total_amount = principal + simple_interset
+print(simple_interset , total_amount)
+
+
+
+#18. write a program to input a temperature in celcius and convert it to fahrenheit using F=(9/5)*C+32.
+
+temperature = int(input('Enter the temp. celsius'))
+fahrenheit = (9/5)*temperature+32
+print(fahrenheit)
+
+
+
+#19. write a python program to input the price of an item and quantity purchased then calculate the total bill . Also calculate a 10% discount and the final amount after discount.
+
+price = int(input('Enter the price'))
+quantity = int(input('Enter the quantity purchased'))
+total_amount = price*quantity
+discount = (total_amount*10) / 100
+after_discount = total_amount - discount
+print(after_discount)
+
+
+
+#20. write a python program that input age and marks and display the boolean results of : (a) age is at least 18 , (b) marks are at least 40 , and (c) both condition are satisfied do not use if
+
+age = int(input('Enter age'))
+marks = int(input('Enter marks'))
+print(age>=18)
+print(marks>=40)
+print(age>=18 and marks>=40)
+
+
+
+#21. write a python program to input a two digit number and display its tens digit and units digit using // and %
+
+num1 = int(input('Enter the two digit number'))
+tens_digit = num1 // 10
+ones_digit = num1 % 10
+print(tens_digit , ones_digit)
+
+
+
+#22. convert the string '50' into an integer aand print its type.
+
+a = '50'
+b = int(a)
+print(type(b))
+
+
+
+#23. convert the number into a float and print this result.
+
+a = int(input('Enter the number'))
+b = float(a)
+print(b)
+
+
+
+#24. take two numbers as input and print their sum after converting them to integers
+
+num1 = input('Enter the first number')
+num2 = input('Enter the second number')
+sum = int(num1) + int(num2)
+print(sum)
+
+
+
+#25. convert the number into a strin and print its type()
+
+num1 = int(input('Enter the number'))
+num2 = str(num1)
+print(type(num2))
+
+
+
+#26. take a number input and check wheither it is greater than 18 after converting it into integer
+
+num = str(input('Enter the number'))
+num1 = int(num)
+if num1 > 18:
+    print(f'{num1} is greater')
+else:
+    print(f'{num1} is smaller')
+
+
+
+#27. write a program to print the message
+
+print('Python is Fun to learn')
+
+
+
+#28.write a program to print your name and your city in the same print() statement
+
+name = input('Enter your name')
+city = input('Enter your city')
+print(f'Name: {name} , City: {city}')
+
+
+
+#29. multiplication
+
+num1 = 6
+num2 = 7
+multiplication = num1*num2
+print(multiplication)
+
+
+
+#30. write a program to print numbers from 1 to 20 using a while loop
+
+i=0
+while i<20:
+    i+=1
+    print(i)
+
+
+
+#31. write a program that print even numbers from 2 to 30
+
+i = 2
+while i <= 30:
+    if i % 2 == 0:
+        print(i)
+    i+=1
+
+
+
+#32. write a program to print numbers from 50 to 1 in reverse order.
+
+i=51
+while i>1:
+    i-=1
+    print(i)
+
+
+
+#33. write a program to print numbers from 10 to 50 using a for loop
+
+for i in range(10,51):
+    print(i)
+
+
+
+#34. write a program to print all numbers divisible by 3 between 1 and 50
+
+for i in range(1,50,3):
+    print(i)
